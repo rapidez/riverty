@@ -3,6 +3,8 @@
 namespace Rapidez\Riverty;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades;
+use Rapidez\Riverty\View\Composers\PaymentMethodComposer;
 
 class RivertyServiceProvider extends ServiceProvider
 {
@@ -14,6 +16,8 @@ class RivertyServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'riverty');
+
+        Facades\View::composer('rapidez::checkout.steps.payment_method', PaymentMethodComposer::class);
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
