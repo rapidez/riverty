@@ -1,4 +1,4 @@
-<template v-if="method.code.includes('riverty_') || method.code.includes('afterpay_')">
+<template v-else-if="method.code.includes('riverty_') || method.code.includes('afterpay_')">
     <x-rapidez::radio
         name="payment_method"
         v-model="variables.code"
