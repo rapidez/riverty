@@ -7,7 +7,7 @@ addBeforePaymentMethodHandler(async function (query, variables, options) {
     }
 
     // Add afterpay data to setPaymentMethodOnCart
-    query = config.queries.cart +
+    query = config.fragments.cart +
     `
     mutation setRivertyPaymentMethodOnCart(
         $cart_id: String!
