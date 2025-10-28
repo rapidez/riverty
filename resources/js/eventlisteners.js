@@ -34,10 +34,11 @@ addBeforePaymentMethodHandler(async function (query, variables, options) {
             cart { ...cart }
         }
     }`
+    
 
     variables.terms_and_conditions = 1
-    variables.customer_gender = window.app.custom?.gender ?? cart.value?.billing_address?.gender ?? cart.value?.shipping_address?.gender
-    variables.customer_dob = window.app.custom?.dob ?? cart.value?.billing_address?.dob ?? cart.value?.shipping_address?.dob ?? cart.value?.billing_address?.date_of_birth ?? cart.value?.shipping_address?.date_of_birth ?? '1999-11-11'
+    variables.customer_gender = window.app.config.globalProperties.custom?.gender ?? cart.value?.billing_address?.gender ?? cart.value?.shipping_address?.gender
+    variables.customer_dob = window.app.config.globalProperties.custom?.dob ?? cart.value?.billing_address?.dob ?? cart.value?.shipping_address?.dob ?? cart.value?.billing_address?.date_of_birth ?? cart.value?.shipping_address?.date_of_birth ?? '1999-11-11'
     variables.customer_telephone = cart.value?.billing_address?.telephone ?? cart.value?.shipping_address?.telephone
 
     return [query, variables, options];
