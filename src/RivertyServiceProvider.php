@@ -17,7 +17,7 @@ class RivertyServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'riverty');
 
-        Facades\View::composer('rapidez::checkout.steps.payment_method', PaymentMethodComposer::class);
+        Facades\View::composer('rapidez::checkout.steps.payment-method', PaymentMethodComposer::class);
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
