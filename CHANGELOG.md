@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/riverty/compare/4.0.0...master)
+[Unreleased changes](https://github.com/rapidez/riverty/compare/4.0.1...master)
+## [4.0.1](https://github.com/rapidez/riverty/releases/tag/4.0.1) - 2025-10-29
+
+### Fixed
+
+- Payment method view composer name fix (#4)
+
 ## [4.0.0](https://github.com/rapidez/riverty/releases/tag/4.0.0) - 2025-06-05
 
 ### Added
