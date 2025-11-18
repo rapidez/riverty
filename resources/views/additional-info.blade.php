@@ -15,7 +15,7 @@
             <x-rapidez::input
                 name="dob"
                 type="date"
-                v-model="$root.custom.dob"
+                v-model="custom.dob"
             >
             </x-rapidez::input>
         </x-rapidez::label>
@@ -24,14 +24,14 @@
                 <x-rapidez::radio
                     name="gender"
                     value="1"
-                    v-model="$root.custom.gender"
+                    v-model="custom.gender"
                 >
                     <div>@lang('Male')</div>
                 </x-rapidez::radio>
                 <x-rapidez::radio
                     name="gender"
                     value="2"
-                    v-model="$root.custom.gender"
+                    v-model="custom.gender"
                 >
                     <div>@lang('Female')</div>
                 </x-rapidez::radio>
