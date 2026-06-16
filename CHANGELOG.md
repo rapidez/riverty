@@ -1,6 +1,31 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/riverty/compare/3.0.1...master)
+[Unreleased changes](https://github.com/rapidez/riverty/compare/3.0.2...master)
+## [3.0.2](https://github.com/rapidez/riverty/releases/tag/3.0.2) - 2026-06-16
+
+### Fixed
+
+- Broken frontend fix (#9)
+
+## [5.0.0](https://github.com/rapidez/riverty/releases/tag/5.0.0) - 2026-05-01
+
+### Changed
+
+- Rapidez V5 support (#5)
+
+
+## [4.0.1](https://github.com/rapidez/riverty/releases/tag/4.0.1) - 2025-10-29
+
+### Fixed
+
+- Payment method view composer name fix (#4)
+
+## [4.0.0](https://github.com/rapidez/riverty/releases/tag/4.0.0) - 2025-06-05
+
+### Added
+
+- Rapidez v4 support (c9f3309)
+
 ## [3.0.1](https://github.com/rapidez/riverty/releases/tag/3.0.1) - 2025-03-18
 
 ### Fixed
