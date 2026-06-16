@@ -4,6 +4,7 @@
 ## [5.0.0](https://github.com/rapidez/riverty/releases/tag/5.0.0) - 2026-05-01
 
 ### Changed
+
 - Rapidez V5 support (#5)
 
 
