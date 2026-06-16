@@ -1,6 +1,25 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/riverty/compare/4.0.1...master)
+[Unreleased changes](https://github.com/rapidez/riverty/compare/4.0.2...master)
+## [4.0.2](https://github.com/rapidez/riverty/releases/tag/4.0.2) - 2026-06-16
+
+### Fixed
+
+- Broken frontend fix (#8)
+
+## [3.0.2](https://github.com/rapidez/riverty/releases/tag/3.0.2) - 2026-06-16
+
+### Fixed
+
+- Broken frontend fix (#9)
+
+## [5.0.0](https://github.com/rapidez/riverty/releases/tag/5.0.0) - 2026-05-01
+
+### Changed
+
+- Rapidez V5 support (#5)
+
+
 ## [4.0.1](https://github.com/rapidez/riverty/releases/tag/4.0.1) - 2025-10-29
 
 ### Fixed
