@@ -1,6 +1,12 @@
 # Changelog 
 
-[Unreleased changes](https://github.com/rapidez/riverty/compare/5.0.0...master)
+[Unreleased changes](https://github.com/rapidez/riverty/compare/3.0.2...master)
+## [3.0.2](https://github.com/rapidez/riverty/releases/tag/3.0.2) - 2026-06-16
+
+### Fixed
+
+- Broken frontend fix (#9)
+
 ## [5.0.0](https://github.com/rapidez/riverty/releases/tag/5.0.0) - 2026-05-01
 
 ### Changed
