@@ -2,7 +2,7 @@
 
 ## Requirements
 
-You need to have the [Riverty Magento 2 module](https://docs.riverty.com/bnpl/platforms/magento/magento_2#setup) installed and configured within your Magento 2 installation.
+You need to have the [Riverty Magento 2 module](https://docs.riverty.com/bnpl/platforms/magento/magento_2#setup) v4.3.8+ installed and configured within your Magento 2 installation.
 
 ## Installation
 

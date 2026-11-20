@@ -2,8 +2,9 @@
 
 namespace Rapidez\Riverty;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\ServiceProvider;
 use Rapidez\Riverty\View\Composers\PaymentMethodComposer;
 
 class RivertyServiceProvider extends ServiceProvider
@@ -28,5 +29,11 @@ class RivertyServiceProvider extends ServiceProvider
                 __DIR__.'/../resources/payment-icons' => public_path('vendor/payment-icons'),
             ], 'payment-icons');
         }
+
+        Route::get('afterpay/payment/sca/{extra?}', fn (?string $extra = null) => redirect(
+            rtrim(config('rapidez.magento_url'), '/') . '/afterpay/payment/sca/' . $extra
+                . (request()->getQueryString() ? '?' . request()->getQueryString() : ''),
+            308
+        ))->where('extra', '.*');
     }
 }

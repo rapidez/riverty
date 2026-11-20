@@ -43,3 +43,39 @@ addBeforePaymentMethodHandler(async function (query, variables, options) {
 
     return [query, variables, options];
 });
+
+addBeforePlaceOrderHandler(async function (query, variables, options) {
+    if (!cart.value?.selected_payment_method?.code?.includes('riverty_') && !cart.value?.selected_payment_method?.code?.includes('afterpay_')) {
+        return [query, variables, options];
+    }
+
+    // Add redirect_url to placeorder
+    query = config.fragments.order + config.fragments.orderV2 +
+    `
+
+    mutation rivertyPlaceOrder($cart_id: String!) {
+        placeOrder(
+            input: {
+                cart_id: $cart_id
+            }
+        ) {
+            redirect_url
+            order {
+                ...order
+            }
+            orderV2 {
+                ...orderV2
+            }
+            errors {
+                code
+                message
+            }
+        }
+    }`
+
+    return [query, variables, options]
+});
+
+addAfterPlaceOrderHandler(async function (response, mutationComponent) {
+    mutationComponent.redirectUrl = response?.data?.placeOrder?.redirect_url || mutationComponent.redirectUrl;
+});
